@@ -173,6 +173,9 @@ export default function App() {
           <p className="text-[13px] text-[var(--color-muted)] mt-1.5">
             4 holes &middot; No clubs required, just good company
           </p>
+          <p className="text-[13px] text-[var(--color-muted)] mt-1.5">
+            No order, no official time, starting around 7-ish
+          </p>
           <span className="inline-block mt-3 bg-[var(--color-gold)] text-[#1a1000] text-[11px] font-semibold tracking-[0.1em] uppercase px-3.5 py-1 rounded-full">
             Not organised by Milliman
           </span>
@@ -226,42 +229,6 @@ export default function App() {
                 />
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== ALL VENUES MAP ===== */}
-      <section className="px-4 py-8">
-        <div className="max-w-lg mx-auto">
-          <h2
-            className="text-[26px] tracking-[0.06em] text-[var(--color-white)] mb-1"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            All Venues
-          </h2>
-          <p className="text-[13px] text-[var(--color-muted)] mb-5">Tap a pin for details</p>
-
-          <div className="rounded-2xl overflow-hidden border border-[rgba(255,255,255,0.08)]">
-            <MapContainer
-              center={[33.657, -117.999]}
-              zoom={14}
-              scrollWheelZoom={false}
-              style={{ height: "350px", width: "100%" }}
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
-                url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-              />
-              {venues.map((venue) => (
-                <Marker key={venue.hole} position={[venue.coords.lat, venue.coords.lng]}>
-                  <Popup>
-                    <strong>Hole {venue.hole}: {venue.name}</strong>
-                    <br />
-                    <span style={{ fontSize: "0.85em", opacity: 0.8 }}>{venue.address}</span>
-                  </Popup>
-                </Marker>
-              ))}
-            </MapContainer>
           </div>
         </div>
       </section>
@@ -324,9 +291,24 @@ export default function App() {
           {penaltyRules.map(renderRuleRow)}
         </div>
       </section>
-      
+
+      {/* ===== MEDAL / REPORTING ===== */}
+      <section className="px-4 py-6 space-y-3">
+        <div className="bg-[var(--color-card)] rounded-2xl border border-[rgba(255,255,255,0.08)] p-5 text-center space-y-2">
+          <p
+            className="text-lg text-[var(--color-gold)]"
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "0.06em" }}
+          >
+            Medal for winner
+          </p>
+          <p className="text-sm text-[var(--color-muted)]">
+            Report your score to Jim S or Tanya
+          </p>
+        </div>
+      </section>
+
       {/* ===== FOOTER ===== */}
-      <footer className="text-center py-8 px-4 border-t border-[rgba(255,255,255,0.08)]">
+      <footer className="text-center py-8 px-4 border-t">
         <p
           className="text-lg text-[var(--color-white)]"
           style={{ fontFamily: "var(--font-display)", letterSpacing: "0.06em" }}
