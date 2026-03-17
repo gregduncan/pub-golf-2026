@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --color-green-golf: #16a34a;
+  --color-green-dark: #15803d;
+  --color-green-light: #bbf7d0;
+  --color-gold: #facc15;
+}
+
+/* Fun golf-stripe background for the hero */
+.hero-pattern {
+  background-image: repeating-linear-gradient(
+    0deg,
+    #16a34a 0px,
+    #16a34a 40px,
+    #15803d 40px,
+    #15803d 80px
+  );
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pulsing animation for the meeting callout */
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+.pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Bounce-in for venue cards on load */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
