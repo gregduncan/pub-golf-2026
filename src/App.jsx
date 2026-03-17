@@ -53,6 +53,7 @@ const bonusRules = [
 
 const penaltyRules = [
   { id: "r6", num: 6, text: "Miss a location (skip a hole)", pts: 2, maxCount: 4 },
+  { id: "r12", num: 12, text: "Talk about AI", pts: 10, maxCount: 1 },
 ];
 
 const allRules = [...bonusRules, ...penaltyRules];
