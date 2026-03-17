@@ -174,7 +174,7 @@ export default function App() {
             4 holes &middot; No clubs required, just good company
           </p>
           <span className="inline-block mt-3 bg-[var(--color-gold)] text-[#1a1000] text-[11px] font-semibold tracking-[0.1em] uppercase px-3.5 py-1 rounded-full">
-            Organised by Jim Silverstein
+            Not organised by Milliman
           </span>
         </div>
       </header>
@@ -332,9 +332,6 @@ export default function App() {
           style={{ fontFamily: "var(--font-display)", letterSpacing: "0.06em" }}
         >
           Pub Golf 2026
-        </p>
-        <p className="text-xs text-[var(--color-muted)] mt-1">
-          Organised by Jim Silverstein
         </p>
         <p className="text-xs text-[var(--color-muted)] mt-3 opacity-60">
           Please drink responsibly.
