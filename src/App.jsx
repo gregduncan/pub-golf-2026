@@ -16,25 +16,25 @@ const venues = [
     hole: 1,
     name: "Simmzy's Restaurant",
     address: "21028 California 1, PCH E-100, Huntington Beach, CA 92647",
-    coords: { lat: 33.6617, lng: -118.0017 },
+    coords: { lat: 33.654849, lng: -117.998078 },
   },
   {
     hole: 2,
     name: "HQ Gastropub",
     address: "155 5th St Suite F-183, Huntington Beach, CA 92648",
-    coords: { lat: 33.6560, lng: -117.9993 },
+    coords: { lat: 33.658121, lng: -118.003069 },
   },
   {
     hole: 3,
     name: "Sandy's Beach Shack",
     address: "315 Pacific Coast Hwy, Huntington Beach, CA 92648",
-    coords: { lat: 33.6553, lng: -117.9988 },
+    coords: { lat: 33.656559, lng: -118.002058 },
   },
   {
     hole: 4,
     name: "Four Sons on Main",
     address: "401 Main St #101, Huntington Beach, CA 92648",
-    coords: { lat: 33.6569, lng: -117.9965 },
+    coords: { lat: 33.660022, lng: -117.999376 },
   },
 ];
 
